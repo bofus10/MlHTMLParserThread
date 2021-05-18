@@ -138,9 +138,9 @@ public class DBWriter implements Runnable{
             stmntThread.close();
         }else{
           rs.previous();  
-          TeleBot.sendMessage("Missing Vendors Data", "952804110:AAE66f5AA3qWS3mnzUHgbv0bT0RluakNfrw", "497957877");
+          TeleBot.sendMessage("Missing Vendors Data", "BOT_TOKEN", "CHATID");
           while(rs.next()){
-            TeleBot.sendMessage(rs.getString("vendors_id")+","+rs.getString("display"), "952804110:AAE66f5AA3qWS3mnzUHgbv0bT0RluakNfrw", "497957877");
+            TeleBot.sendMessage(rs.getString("vendors_id")+","+rs.getString("display"), "BOT_TOKEN", "CHATID");
           }
           rs.close();
         }*/
